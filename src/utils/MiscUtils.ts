@@ -80,7 +80,7 @@ class MiscUtils {
   };
 
   static readablePriceOption = (priceOption: string[]) => {
-    const replaceMillion = (price: string) => price.replace(/000000$/, ' tr');
+    const replaceMillion = (price: string) => price.replace(/000000$/, ' triệu');
 
     if (priceOption[0] === '0') {
       return 'Dưới ' + replaceMillion(priceOption[1]);
